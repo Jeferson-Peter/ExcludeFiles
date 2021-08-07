@@ -6,7 +6,6 @@ from tkinter.filedialog import askdirectory
 if __name__ == '__main__':
     Tk().withdraw()
     path_to_file = askdirectory()
-    files = []
     for dirpath, dirnames, filenames in os.walk(path_to_file):
         for file in filenames:
             curpath = os.path.join(dirpath, file)
